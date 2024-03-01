@@ -7,10 +7,7 @@ struct Student {
 };
 
 float average(struct Student student) {
-    float sum = 0;
-    int i;
-    for (i = 0; i < 3; i++) sum += student.marks[i];
-    return sum / 3.0;
+    return (student.marks[0] + student.marks[1] + student.marks[2]) / 3.0;
 }
 
 int main() {
