@@ -6,10 +6,10 @@ int FIB(int n) {
 }
 
 int main() {
-    int N, i;
+    int n, i;
     printf("Number of Fibonacci terms: ");
-    scanf("%d", &N);
-    for (i = 0; i < N; i++) printf("%d ", FIB(i));
+    scanf("%d", &n);
+    for (i = 0; i < n; i++) printf("%d ", FIB(i));
     return 0;
 }
 
