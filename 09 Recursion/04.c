@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-    printf("Students by average marks:\n");
+    printf("\nStudents by average marks:\n");
     for (i = 0; i < 3; i++) printf("%s\n", students[i].name);
     return 0;
 }
