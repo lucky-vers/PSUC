@@ -13,3 +13,8 @@ int main() {
     return 0;
 }
 
+// Input:
+// Enter two numbers: 200 36
+// Output:
+// GCD of 200 and 36 is 4
+

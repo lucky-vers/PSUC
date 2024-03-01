@@ -33,3 +33,13 @@ int main() {
     return 0;
 }
 
+// Input:
+// Name, roll number, and marks of 1: Aditya 1 85 96 90
+// Name, roll number, and marks of 2: Lakshit 2 84 100 70
+// Name, roll number, and marks of 3: Varun 3 72 70 80
+// Output:
+// Students by average marks:
+// Varun
+// Lakshit
+// Aditya
+

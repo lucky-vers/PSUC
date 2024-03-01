@@ -21,3 +21,13 @@ int main() {
     return 0;
 }
 
+// Input:
+// Number of elements: 5
+// Element 1: 9
+// Element 2: 20
+// Element 3: -100
+// Element 4: 390
+// Element 5: 1002
+// Output:
+// Max number in array: 1002
+
