@@ -14,7 +14,7 @@ int main() {
     int i, j;
     struct Student students[3];
     for (i = 0; i < 3; i++) {
-        printf("Enter name, roll number, and marks of student %d: ", i + 1);
+        printf("Name, roll number, and marks of %d: ", i + 1);
         scanf("%s %d %f %f %f", students[i].name, &students[i].rollno, &students[i].marks[0], &students[i].marks[1], &students[i].marks[2]);
     }
 
@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-    printf("Students sorted by average marks:\n");
+    printf("Students by average marks:\n");
     for (i = 0; i < 3; i++) printf("%s\n", students[i].name);
     return 0;
 }
