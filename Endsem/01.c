@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
+void reverseRow(int n, int arr[n]) {
+    int i;
+    for (i = 0; i < n / 2; i++) {
+        int tmp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = tmp;
+    }
+    return;
+}
+
 int isPrime(int n) {
     if (n < 0) return 0;
     if (n == 0 || n == 1) return 0;
@@ -42,6 +52,7 @@ int main() {
     }
 
     for (i = 0; i < n; i++) {
+        reverseRow(n, mat[i]);
         for (j = 0; j < n; j++) {
             if (i == j) mat[i][j] *= 2;
             else if (( i + j ) == ( n - 1 )) mat[i][j] = closestPrime(mat[i][j]);
