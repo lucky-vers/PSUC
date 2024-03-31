@@ -8,7 +8,6 @@ void reverseRow(int n, int arr[n]) {
         arr[i] = arr[n - i - 1];
         arr[n - i - 1] = tmp;
     }
-    return;
 }
 
 int isPrime(int n) {
