@@ -22,12 +22,10 @@ int main() {
 }
 
 // Input:
-// Number of elements: 5
+// Number of elements: 3
 // Element 1: 9
-// Element 2: 20
-// Element 3: -100
-// Element 4: 390
-// Element 5: 1002
+// Element 2: 390
+// Element 3: 1002
 // Output:
 // Max number in array: 1002
 
