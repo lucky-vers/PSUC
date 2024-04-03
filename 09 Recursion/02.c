@@ -14,7 +14,7 @@ int main() {
 }
 
 // Input:
-// Number of Fibonacci terms: 6
+// Number of Fibonacci terms: 8
 // Output:
 // 0 1 1 2 3 5 8 13
 
