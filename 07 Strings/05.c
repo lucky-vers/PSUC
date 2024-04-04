@@ -1,31 +1,27 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    char sentence[100];
-    char del[20];
-    int len, i, j;
-
+    char sent[1024], del[100];
     printf("Enter sentence: ");
-    fgets(sentence, sizeof(sentence), stdin);
+    fgets(sent, sizeof(sent), stdin);
 
     printf("Word to delete: ");
     scanf("%s", del);
 
-    len = strlen(del);
+    int i, j;
 
-    for (i = 0; sentence[i] != '\0'; i++) {
-        for (j = 0; sentence[i + j] == del[j] && del[j] != '\0'; j++);
+    for (i = 0; sent[i] != '\0'; i++) {
+        for (j = 0; sent[i + j] == del[j] && del[j] != '\0'; j++);
         if (del[j] == '\0') {
-            while (sentence[i + j] != '\0') {
-                sentence[i] = sentence[i + j];
+            while (sent[i + j] != '\0') {
+                sent[i] = sent[i + j];
                 i++;
             }
-            sentence[i] = '\0';
+            sent[i] = '\0';
         }
     }
 
-    printf("%s\n", sentence);
+    printf("%s\n", sent);
 
     return 0;
 }
