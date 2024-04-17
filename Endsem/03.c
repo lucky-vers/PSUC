@@ -1,6 +1,6 @@
-// 1. Write a program to read and display a matrix of the order M * N
-// 2. Find and display the no.of prime numbers present in the matrix
-// 3. Write a function SumOfDigits() to read and return a value to display a new modified matrix in which each element is the sum of digits of the elements of the original matrix
+// Write a program to read and display a matrix of the order M * N
+// Find and display the no.of prime numbers present in the matrix
+// Write a function SumOfDigits() to read and return a value to display a new modified matrix in which each element is the sum of digits of the elements of the original matrix
 
 #include <stdio.h>
 #include <math.h>

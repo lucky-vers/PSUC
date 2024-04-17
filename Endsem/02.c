@@ -1,16 +1,6 @@
-// (a) Input a matrix of order MxN, and display it in matrix format
-// (b) Create a function “func()” and read the 2D array into it. Now modify the matrix such that row_i=row_i + row_j and print the modified matrix.
-// Ex :
-//
-// Input
-// 1 5
-// 2 6
-//
-// Output :
-// 1 5
-// 3 11
-//
-// (c) Now in the main, further modify the modified matrix in such a way that, the largest element in a row is replaced by the sum of the duplicate elements in the row. If no duplicate elements, then retain the original value.
+// Input a matrix of order MxN, and display it in matrix format
+// Create a function “func()” and read the 2D array into it. Now modify the matrix such that row_i=row_i + row_j and print the modified matrix.
+// Now in the main, further modify the modified matrix in such a way that, the largest element in a row is replaced by the sum of the duplicate elements in the row. If no duplicate elements, then retain the original value.
 
 #include <stdio.h>
 #include <string.h>
