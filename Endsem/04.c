@@ -10,8 +10,9 @@ void Capital(char *s) {
 }
 
 void Sort(char *s) {
-    if (s[0] >= 'A' && s[0] <= 'Z') s[0] += 32;
     int i, j;
+    char k = s[0];
+    if (s[0] >= 'A' && s[0] <= 'Z') s[0] += 32;
     for (i = 0; s[i] != '\0'; i++) {
         for (j = i; s[j] != '\0'; j++) {
             if (s[i] > s[j]) {
@@ -21,6 +22,14 @@ void Sort(char *s) {
             }
         }
     }
+
+    for (i = 0; s[i] != '\0'; i++) {
+        if (s[i] == k + 32) {
+            s[i] -= 32;
+            break;
+        }
+    }
+
 }
 
 int main() {
@@ -51,6 +60,5 @@ int main() {
         Sort(names[i]);
         printf("%s\n", names[i]);
     }
-
 
 }
