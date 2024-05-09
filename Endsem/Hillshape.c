@@ -12,25 +12,19 @@ int isHill(int n) {
         n /= 10;
     }
 
-    for (int i = 0; i < size / 2; i++) {
-        int tmp = arr[i];
-        arr[i] = arr[size - i - 1];
-        arr[size - i - 1] = tmp;
-    }
-
-    int max = 0, mId = 0;
+    int max = 0, mid = 0;
 
     for (int i = 0; i < size; i++) {
         if (arr[i] > max) {
             max = arr[i];
-            mId = i;
+            mid = i;
         }
     }
 
-    if (mId == size - 1) return 0;
+    if (!mid) return 0;
 
-    for (int i = mId + 1; i < size; i++) if (arr[i - 1] <= arr[i]) return 0;
-    for (int i = 1; i <= mId; i++) if (arr[i - 1] >= arr[i]) return 0;
+    for (int i = mid + 1; i < size; i++) if (arr[i - 1] <= arr[i]) return 0;
+    for (int i = 1; i <= mid; i++) if (arr[i - 1] >= arr[i]) return 0;
 
     return 1;
 }
