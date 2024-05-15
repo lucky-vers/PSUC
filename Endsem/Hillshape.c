@@ -21,7 +21,7 @@ int isHill(int n) {
         }
     }
 
-    if (!mid) return 0;
+    if (!mid || mid == size - 1) return 0;
 
     for (int i = mid + 1; i < size; i++) if (arr[i - 1] <= arr[i]) return 0;
     for (int i = 1; i <= mid; i++) if (arr[i - 1] >= arr[i]) return 0;
