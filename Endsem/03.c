@@ -16,7 +16,6 @@ int isPrime(int n) {
     }
 
     return 1;
-
 }
 
 int SumOfDigits(int n) {
