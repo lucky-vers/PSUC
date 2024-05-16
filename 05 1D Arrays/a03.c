@@ -1,13 +1,23 @@
 #include <stdio.h>
 
-void Del(int index, int *arr) {
-    int i;
-    for (i = index; arr[i] != '\0'; i++) arr[i] = arr[i + 1];
-    return;
+int Del(int element, int *arr, int n) {
+    int i, j;
+
+    for (i = 0; i < n; i++) {
+        if (arr[i] == element) {
+            for (j = i; j < n - 1; j++) {
+                arr[j] = arr[j + 1];
+            }
+            n--;
+            i--;
+        }
+    }
+
+    return n;
 }
 
 int main() {
-    int n, i, e, c = 0;
+    int n, i, e;
 
     printf("Enter size: ");
     scanf("%d", &n);
@@ -20,15 +30,10 @@ int main() {
     printf("Enter number to delete: ");
     scanf("%d", &e);
 
-    for (i = 0; i < n; i++) {
-        if (arr[i] == e) {
-            Del(i, arr);
-            c++;
-        }
-    }
+    int c = Del(i - c++, arr, n);
 
     printf("Array after: ");
-    for (i = 0; i < c; i++) printf("%d ", arr[i]);
+    for (i = 0; i <= c; i++) printf("%d ", arr[i]);
     printf("\n");
 
     return 0;
